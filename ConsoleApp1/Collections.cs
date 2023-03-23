@@ -18,11 +18,11 @@ namespace ConsoleApp1
 
 	public class CollectionsMain{
 
-		public static void Main(string[] args)
-		{
-			MyCollections<int> mt = new MyCollections<int>(2);
-			GenricMethod("string");
-		}
+		//public static void Main(string[] args)
+		//{
+		//	MyCollections<int> mt = new MyCollections<int>(2);
+		//	GenricMethod("string");
+		//}
 
 		public static void GenricMethod<T>(T val)
 		{
