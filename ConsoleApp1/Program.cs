@@ -15,18 +15,18 @@ namespace ConsoleApp1 {
             monday,sunday ,tuesday,wednesday,thursday,friday,saturday
         }
 
-        static void Main(string[] args)
+        //public static void Main(string[] args)
 
-        {
+        //{
 
-           foreach (var value in Enum.GetValues(typeof(days)))
-            {
-                Console.WriteLine(value);
-            }
+        //   foreach (var value in Enum.GetValues(typeof(days)))
+        //    {
+        //        Console.WriteLine(value);
+        //    }
             
 
 
-        }
+        //}
 
        
     }

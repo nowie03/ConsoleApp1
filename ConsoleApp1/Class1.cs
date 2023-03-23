@@ -9,14 +9,14 @@ namespace ConsoleApp1
 
     class Test
     {
-        public static void main(string[] args)
-        {
-            Class1 c = new(1, "IT", "name", (float)1.9);
+        //public static void Main(string[] args)
+        //{
+        //    Class1 c = new(1, "IT", "name", (float)1.9);
 
 
 
-            Console.WriteLine(c);
-        }
+        //    Console.WriteLine(c);
+        //}
     }
 
      class Class1
