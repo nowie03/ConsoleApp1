@@ -8,11 +8,11 @@ namespace ConsoleApp1
 {
 
     public class TestMain {
-        public static void Main(string[] args)
-        {
-            Desturctor c = new();
-            //Console.WriteLine(c.ToString());
-        }
+        //public static void Main(string[] args)
+        //{
+        //    Desturctor c = new();
+        //    //Console.WriteLine(c.ToString());
+        //}
     }
      class Desturctor
     {
