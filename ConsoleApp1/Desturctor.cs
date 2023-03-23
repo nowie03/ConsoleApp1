@@ -10,17 +10,17 @@ namespace ConsoleApp1
     public class TestMain {
         public static void Main(string[] args)
         {
-            Class2 c = new();
+            Desturctor c = new();
             //Console.WriteLine(c.ToString());
         }
     }
-     class Class2
+     class Desturctor
     {
        
-        public Class2() {
+        public Desturctor() {
             Console.WriteLine("Constructing");
         }
-         ~Class2() {
+         ~Desturctor() {
             Console.WriteLine("destructing");
         }
 

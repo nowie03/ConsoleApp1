@@ -19,12 +19,12 @@ namespace ConsoleApp1
         //}
     }
 
-     class Class1
+     class Constructor
     {
         public int id;
         public string name, department;
         public float grade;
-        public Class1(int id, string department, string name, float grade)
+        public Constructor(int id, string department, string name, float grade)
         {
             this.id = id;
             this.name = name;
