@@ -4,34 +4,34 @@ using System.Security.Cryptography.X509Certificates;
 
 public class PracticeQns23
 {
-    public static void Main(string[] args)
-    {
-        //List<int>  a = new List<int>();
-        //a.Add(1);
-        //a.Add(2);
-        //a.Add(3);
-        //a.Add(4);
-        //a.Add(1);
-        //a.Add(6);
+    //public static void Main(string[] args)
+    //{
+    //    //List<int>  a = new List<int>();
+    //    //a.Add(1);
+    //    //a.Add(2);
+    //    //a.Add(3);
+    //    //a.Add(4);
+    //    //a.Add(1);
+    //    //a.Add(6);
 
-        //Console.WriteLine(TotalNumberOfDupilcates(a));
+    //    //Console.WriteLine(TotalNumberOfDupilcates(a));
 
 
-        //List<int> odd, even;
-        //Seperate(out odd, out even,20);
+    //    //List<int> odd, even;
+    //    //Seperate(out odd, out even,20);
 
-        //foreach(int i in odd) Console.Write(i+" ");
-        //Console.WriteLine();
-        //foreach (int i in even) Console.Write(i+" ");
+    //    //foreach(int i in odd) Console.Write(i+" ");
+    //    //Console.WriteLine();
+    //    //foreach (int i in even) Console.Write(i+" ");
         
 
-        List<int>a = new List<int>() { 9,1,3,6};
-        List<int> b= new List<int>() { 11, 2, 13, 26 };
-        foreach (int i in MergeSorted(a,b)) { 
-            Console.WriteLine(i);
-        }
+    //    List<int>a = new List<int>() { 9,1,3,6};
+    //    List<int> b= new List<int>() { 11, 2, 13, 26 };
+    //    foreach (int i in MergeSorted(a,b)) { 
+    //        Console.WriteLine(i);
+    //    }
 
-    }
+    //}
 
 
 
