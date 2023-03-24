@@ -206,6 +206,17 @@ namespace ConsoleApp1
 
 		}
 
+		public static int NumberOfRainbowChocolates()
+		{
+			int noOfRainbowChocolates=0;
+
+			//TODO: implement logic
+
+			return noOfRainbowChocolates;
+
+
+		}
+
 
 	}
 }
