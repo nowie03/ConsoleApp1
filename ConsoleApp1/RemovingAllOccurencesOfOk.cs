@@ -65,12 +65,12 @@ namespace ConsoleApp1
             return answer;
         }
 
-        public static void Main(string[] args)
-        {
-            string input = Console.ReadLine();
-            Console.WriteLine(RemoveOk(input));
+        //public static void Main(string[] args)
+        //{
+        //    string input = Console.ReadLine();
+        //    Console.WriteLine(RemoveOk(input));
 
-        }
+        //}
 
     }
 }
