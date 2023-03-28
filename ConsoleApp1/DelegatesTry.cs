@@ -9,18 +9,23 @@ namespace ConsoleApp1
     internal class DelegatesTry
     {
         public delegate int DelegateForSum(int a ,int b);
-        public delegate void DelegateForGeneric<T> (T a,T  b);
+        public delegate T DelegateForGeneric<T> (T a,T  b);
+        public delegate T DelegateNoParams<T>();
         public static void Main(string[] args)
         {
             DelegateForSum delegateForSum = Sum;
             delegateForSum += Diff;
 
+            //generic delegates
             DelegateForGeneric<int> dt = GenericTryFun1;
             DelegateForGeneric<string> dt1 = GenericTryFun2;
 
+            //anonymus functions
+            DelegateForGeneric<int> anonymusDelegate = new(delegate (int a, int b) { return a + b; });
 
+            DelegateForGeneric<string>anonymusDelegate1=new(delegate (string a, string b) {  return a + b; });
 
-
+            DelegateNoParams<string> anonymusDelegate2 = new(delegate () { return "none"; });
 
 
             foreach (DelegateForSum d in delegateForSum.GetInvocationList()) {
@@ -48,8 +53,8 @@ namespace ConsoleApp1
             return a + b;
         }
 
-       private static void GenericTryFun1(int a,int b) { Console.WriteLine("a/b"); }
+       private static int GenericTryFun1(int a,int b) { return a/b; }
 
-        private static void GenericTryFun2(string a,string b) { Console.WriteLine(a+" "+b);}
+        private static string GenericTryFun2(string a,string b) { return a+" "+b;}
     }
 }
