@@ -20,11 +20,11 @@ namespace ConsoleApp1
     public class DemoInterface :ITryInterface {
         public static int key;
 
-        public static void Main(string[] args)
-        {
-            ITryInterface demoInterface = new DemoInterface();
-            demoInterface.Method();
-        }
+        //public static void Main(string[] args)
+        //{
+        //    ITryInterface demoInterface = new DemoInterface();
+        //    demoInterface.Method();
+        //}
         
     }
 

@@ -19,15 +19,13 @@ namespace ConsoleApp1 {
 
         //{
 
-        //   foreach (var value in Enum.GetValues(typeof(days)))
-        //    {
-        //        Console.WriteLine(value);
-        //    }
-            
+        //  DelegatesTry delegates = new DelegatesTry();
+        //    Console.WriteLine(delegates.);
+
 
 
         //}
 
-       
+
     }
 }
