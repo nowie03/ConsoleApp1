@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
@@ -7,6 +8,46 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
+    class Student { 
+        public string Name { get; set; }
+        public string Department { get; set; }
+
+        public int Age { get; set; }
+
+        public int Id { get; set; }
+
+        public Student(string name, string department,int age,int id) {
+            Name=name; Department=department;   Age=age; Id=id; 
+        }
+
+        public override string ToString()
+        {
+            return $"{Name} {Age} {Department} {Id} ";
+        }
+
+
+    }
+    class Comparator : IComparer<int[]>
+    {
+        
+        public int Compare(int[]? x, int[]? y)
+        {
+            if (x[0] == y[0])
+            {
+                if (x[1] < y[1]) return -1;
+
+                if (x[1] == y[1]) return 0;
+
+                return 1;
+            }
+
+            else if (x[0] < y[0]){
+                return -1;
+            }
+
+            return 1;
+        }
+    }
     internal class LambdaExpressionsTry
     {
         delegate T GenericDelegate<T>(T a ,T b);
@@ -66,6 +107,26 @@ namespace ConsoleApp1
                 Console.WriteLine() ;   
             }
 
+
+            int[,] matrix = {
+                { 2,3},
+                {2,4 },
+                { 3,3},
+                {3,2 }
+            };
+
+            //lambda on custom data types
+            List<Student> studentsList = new(){new Student("hello","CSE",24,101),
+                new Student("helloOne", "IT", 22, 102),
+                new Student("helloTwo", "EEE", 23, 103) } ;
+
+            foreach (Student student in studentsList.OrderBy(s=>-s.Age)) {
+                Console.WriteLine(student);
+            }
+
+
+
+            
 
         }
 
