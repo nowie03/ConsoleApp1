@@ -47,7 +47,26 @@ namespace ConsoleApp1
 
             foreach (int i in divisbleBy5)
                 Console.Write(i + " ");
-   
+            Console.WriteLine();
+            
+            List<int> sortedlist=someList.OrderBy(a => a).ToList();
+
+            Dictionary<int, int[]> myDict = new Dictionary<int, int[]>() { 
+                { 1,new int[]{ 2,6} },
+                { 2 ,new int[]{ 2,4}},
+                { 3,new int[]{ 3,2}},
+                { 4,new int[]{ 3,1}},
+               
+            };
+
+            foreach (var keyValue in myDict.OrderBy(x => -x.Value[0] * 100 -x.Value[1]))
+            {
+                Console.Write(keyValue.Key +" ") ;
+                foreach (int i in keyValue.Value) Console.Write(i+" ");
+                Console.WriteLine() ;   
+            }
+
+
         }
 
        
