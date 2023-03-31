@@ -71,41 +71,41 @@ namespace ConsoleApp1
 
         }
 
-        public static async Task  Main()
-        {
+        //public static async Task  Main()
+        //{
 
-            var progress =   Task.WhenAll(Method1(), Method2());
+        //    var progress =   Task.WhenAll(Method1(), Method2());
 
-            while (!progress.IsCompleted)
-            {
-                Console.WriteLine(progress.Status);
-                Thread.Sleep(1000);
-            }
+        //    while (!progress.IsCompleted)
+        //    {
+        //        Console.WriteLine(progress.Status);
+        //        Thread.Sleep(1000);
+        //    }
 
-           foreach (var result in  progress.Result){
-                Console.WriteLine(result);
-            }
-
-
-            var progressAny = Task.WhenAny(Method1(), Method2());
-
-            while (!progress.IsCompleted)
-            {
-                Console.WriteLine(progress.Status);
-                Thread.Sleep(1000);
-            }
-
-            foreach (var result in progress.Result)
-            {
-                Console.WriteLine(result);
-            }
+        //   foreach (var result in  progress.Result){
+        //        Console.WriteLine(result);
+        //    }
 
 
+        //    var progressAny = Task.WhenAny(Method1(), Method2());
+
+        //    while (!progress.IsCompleted)
+        //    {
+        //        Console.WriteLine(progress.Status);
+        //        Thread.Sleep(1000);
+        //    }
+
+        //    foreach (var result in progress.Result)
+        //    {
+        //        Console.WriteLine(result);
+        //    }
 
 
 
 
-        }
+
+
+        //}
     
     }
 }
