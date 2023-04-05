@@ -99,18 +99,18 @@ namespace ConsoleApp1
             await asyncPracticeQn.FoodServe();
         }
 
-        public static async Task Main(string[]args)
-        {
+        //public static async Task Main(string[]args)
+        //{
 
-            AsyncPracticeQn asyncPracticeQn = new();
-            await asyncPracticeQn.StartFunction(asyncPracticeQn);
+        //    AsyncPracticeQn asyncPracticeQn = new();
+        //    await asyncPracticeQn.StartFunction(asyncPracticeQn);
             
-            Console.ReadKey();
+        //    Console.ReadKey();
 
             
 
 
-        }
+        //}
 
 
     }
