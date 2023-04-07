@@ -24,6 +24,7 @@ namespace ConsoleApp1
 
             return frequency.OrderBy((key) => -key.Value);
         }
+
         public int[] ChangeCardsIntoNumericals(string[] cards)
         {
             int[] cardsChanged = new int[cards.Length];
@@ -53,6 +54,7 @@ namespace ConsoleApp1
 
         public string[] GetRanks(string[] cards)
         {
+            
             string[] ranks = new string [cards.Length];
 
             for(int cardIndex=0; cardIndex < cards.Length; cardIndex++)
@@ -62,17 +64,10 @@ namespace ConsoleApp1
 
             return ranks;
 
-
-
-
         }
 
         public bool IsSequential(string[] cards)
         {
-            //Ace, King, Queen, Jack, 10, 9, 8, 7, 6, 5, 4, 3, 2.
-            //this is the sequence
-
-            //to simplify we assume Ace-14 King -13 Queen-12 Jack -11
             int[] cardsChanged = ChangeCardsIntoNumericals(cards);
             Array.Sort(cardsChanged);
 
@@ -88,6 +83,8 @@ namespace ConsoleApp1
         
         public bool IsRoyalFlush(string[] cards)
         {
+
+          
             Array.Sort(cards);
 
             if ( HasSameSuit(cards) && cards[0][0] == '1' && cards[1][0] == 'A' && cards[2][0] == 'J'
@@ -96,7 +93,7 @@ namespace ConsoleApp1
             }
 
             return false;
-            // 10c ac jc kc qc
+          
         }
 
 
@@ -112,12 +109,9 @@ namespace ConsoleApp1
 
         public bool IsFourOfAKind(string[] cards)
         {
-            //10d 11h 10d 10d 10d
-            //10d 10d 10d 11c 11c
-            //10d 10d 10d 10d 11c
+
             string[] ranksOfCards = GetRanks(cards);
-            //10 ,11 
-            //10 11
+
   
             var frequencySorted = GetFrequency(ranksOfCards);
             
@@ -174,8 +168,6 @@ namespace ConsoleApp1
             var frequencySorted = GetFrequency(ranksOfCards);
 
 
-            //foreach (var pair in frequencySorted) Console.WriteLine(pair.Key + " " + pair.Value);
-
             if (frequencySorted.ElementAt(0).Value == 2 && frequencySorted.ElementAt(1).Value == 2)
                 return true;
 
@@ -189,8 +181,6 @@ namespace ConsoleApp1
             // 10c 2c 8h 8s 2d
 
             var frequencySorted = GetFrequency(ranksOfCards);
-
-            //foreach (var pair in frequencySorted) Console.WriteLine(pair.Key + " " + pair.Value);
 
             if (frequencySorted.ElementAt(0).Value == 2)
                 return true;
