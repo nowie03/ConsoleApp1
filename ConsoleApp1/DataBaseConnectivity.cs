@@ -14,12 +14,12 @@ namespace ConsoleApp1
 
         private static string connectionString = "Data Source=5CG9410FHX;Initial Catalog=model;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
-        public static void Main(string[] args)
-        {
-            //Delete(7);
-            //Insert(4, "ramesh", "ECE", 22, DateTime.Now, "ramesh@gmail.com", 1231);
-            CallFunction();
-        }
+        //public static void Main(string[] args)
+        //{
+        //    //Delete(7);
+        //    //Insert(4, "ramesh", "ECE", 22, DateTime.Now, "ramesh@gmail.com", 1231);
+        //    CallFunction();
+        //}
 
         public static void CallFunction()
         {
